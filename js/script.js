@@ -54,3 +54,15 @@ function sendMessage() {
         return false;
     }
 }
+
+//image slider script
+function backBtn() {
+    let buttonLeft = document.querySelector(".gallery");
+    buttonLeft.style.scrollBehavior = "smooth";
+    buttonLeft.scrollBy(450, 0);
+}
+function nextBtn() {
+    let buttonRight = document.querySelector(".gallery");
+    buttonRight.style.scrollBehavior = "smooth";
+    buttonRight.scrollBy(-450, 0);
+}
